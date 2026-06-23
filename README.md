@@ -98,22 +98,3 @@ MIT — 可自由使用、分享和修改。
 
 发现错误或想改进某个章节？欢迎提交 Issue 或 PR。
 
----
-
-## 更新工作流
-
-在本地修改 skill 后（`~/.agents/skills/guare-smart-but-scattered/`），同步到本仓库：
-
-```bash
-cd ~/Code/smart-but-scattered-skill
-
-# 复制最新的 skill 文件
-cp ~/.agents/skills/guare-smart-but-scattered/SKILL.md .
-cp ~/.agents/skills/guare-smart-but-scattered/*.md .
-cp -r ~/.agents/skills/guare-smart-but-scattered/chapters/ .
-
-# 提交并推送
-git add -A
-git commit -m "chore: update skill content — <简短说明>"
-git push
-```

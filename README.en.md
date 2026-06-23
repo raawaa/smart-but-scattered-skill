@@ -118,22 +118,3 @@ This skill is a **transformative knowledge extraction** — it distills the fram
 
 Found an error or want to improve a chapter? Open an issue or PR. This skill is designed to be iterated on — updates are straightforward.
 
----
-
-## Update Workflow
-
-After modifying the skill locally (`~/.agents/skills/guare-smart-but-scattered/`), sync to this repo:
-
-```bash
-cd ~/Code/smart-but-scattered-skill
-
-# Copy latest skill files
-cp ~/.agents/skills/guare-smart-but-scattered/SKILL.md .
-cp ~/.agents/skills/guare-smart-but-scattered/*.md .
-cp -r ~/.agents/skills/guare-smart-but-scattered/chapters/ .
-
-# Commit and push
-git add -A
-git commit -m "chore: update skill content — <brief description>"
-git push
-```
