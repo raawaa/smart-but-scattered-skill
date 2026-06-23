@@ -70,10 +70,22 @@ Or load a specific chapter:
 **One command for all AI agents:**
 
 ```bash
-npx raawaa/smart-but-scattered-skill
+# Global install (recommended — available in all projects)
+npx skills add raawaa/smart-but-scattered-skill -g -y
 ```
 
-The script auto-detects your agent (Kimi Code / Claude Code / GitHub Copilot CLI / Amp) and installs to the correct directory. Restart your agent afterward.
+```bash
+# Project-level install
+npx skills add raawaa/smart-but-scattered-skill -y
+```
+
+Auto-detects your installed agents (Kimi Code, Claude Code, GitHub Copilot, Cursor, 70+ total) and installs to the correct directory. Restart your agent afterward.
+
+### Update
+
+```bash
+npx skills update guare-smart-but-scattered -g -y
+```
 
 ### Manual Install (Fallback)
 

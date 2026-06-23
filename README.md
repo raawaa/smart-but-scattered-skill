@@ -48,43 +48,31 @@
 **一条命令安装（支持所有 AI agent）：**
 
 ```bash
-npx raawaa/smart-but-scattered-skill
+# 全局安装（推荐，所有项目可用）
+npx skills add raawaa/smart-but-scattered-skill -g -y
 ```
 
-脚本会自动检测你使用的 AI 工具（Kimi Code / Claude Code / GitHub Copilot CLI / Amp），并将 skill 安装到正确的目录。
+```bash
+# 项目级安装（仅当前项目可用）
+npx skills add raawaa/smart-but-scattered-skill -y
+```
 
-安装后重启你的 AI agent 即可生效。
+该工具会自动检测你安装的 AI agent（Kimi Code、Claude Code、GitHub Copilot、Cursor 等 70+），并将 skill 安装到正确的目录。安装后重启 agent 即可生效。
+
+### 升级
+
+```bash
+npx skills update guare-smart-but-scattered -g -y
+```
 
 ## 使用方法
 
 > ⚠️ **重要**：本 skill 的描述是英文的，AI agent 在中文对话中可能不会自动激活它。**建议每次使用时先手动通过斜杠命令触发**，然后再用中文描述你的问题。
 
-### 快速触发（推荐）
-
 ```
 /guare-smart-but-scattered 我儿子8岁，写作业总是发呆玩文具，怎么办？
 /guare-smart-but-scattered 给我讲讲 ABC 干预模型
 /guare-smart-but-scattered 读一下 ch14，我需要持续注意力的方法
-```
-
-### 手动安装（备选）
-
-如果自动安装不适用，也可以手动复制到对应目录：
-
-**Kimi Code / Amp:**
-```bash
-cp -r smart-but-scattered-skill ~/.agents/skills/guare-smart-but-scattered
-```
-
-**Claude Code:**
-```bash
-cp -r smart-but-scattered-skill ~/.claude/skills/guare-smart-but-scattered
-```
-
-**GitHub Copilot CLI:**
-```bash
-cp -r smart-but-scattered-skill ~/.copilot/skills/guare-smart-but-scattered
-gh copilot skills reload
 ```
 
 ## 适用人群
