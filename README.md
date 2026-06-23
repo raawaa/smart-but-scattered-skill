@@ -43,60 +43,48 @@
 | 灵活性 (Flexibility) | 行动 | 遇到障碍时调整计划 |
 | 元认知 (Metacognition) | 思维 | 自我监控和自我评估 |
 
+## 安装
+
+**一条命令安装（支持所有 AI agent）：**
+
+```bash
+npx raawaa/smart-but-scattered-skill
+```
+
+脚本会自动检测你使用的 AI 工具（Kimi Code / Claude Code / GitHub Copilot CLI / Amp），并将 skill 安装到正确的目录。
+
+安装后重启你的 AI agent 即可生效。
+
 ## 使用方法
 
-> ⚠️ **重要**：本 skill 的描述是英文的，AI agent 在中文对话中可能不会自动激活它。**强烈建议每次使用时先手动通过斜杠命令触发**，确保 skill 已被加载，然后再用中文描述你的问题。
+> ⚠️ **重要**：本 skill 的描述是英文的，AI agent 在中文对话中可能不会自动激活它。**建议每次使用时先手动通过斜杠命令触发**，然后再用中文描述你的问题。
 
 ### 快速触发（推荐）
 
-安装后，每次对话开始时先用斜杠命令激活 skill：
-
 ```
 /guare-smart-but-scattered 我儿子8岁，写作业总是发呆玩文具，怎么办？
-```
-
-或者指定主题：
-```
 /guare-smart-but-scattered 给我讲讲 ABC 干预模型
-```
-
-或者加载特定章节：
-```
 /guare-smart-but-scattered 读一下 ch14，我需要持续注意力的方法
 ```
 
-### 在 Claude Code 中使用
+### 手动安装（备选）
 
-1. **安装** — 将文件夹复制到 Claude Code 的 skills 目录：
-   ```bash
-   cp -r smart-but-scattered-skill ~/.claude/skills/guare-smart-but-scattered
-   ```
+如果自动安装不适用，也可以手动复制到对应目录：
 
-2. **使用** — 用斜杠命令或自然语言激活。中文用户**推荐用斜杠命令**：
-
-### 在 GitHub Copilot CLI 中使用
-
-```bash
-# 安装
-cp -r smart-but-scattered-skill ~/.copilot/skills/guare-smart-but-scattered
-# 重载技能
-gh copilot skills reload
-```
-
-然后在会话中用斜杠激活：
-```
-#skills guare-smart-but-scattered 孩子写作业拖拉怎么办？
-```
-
-### 在 Amp 中使用
-
+**Kimi Code / Amp:**
 ```bash
 cp -r smart-but-scattered-skill ~/.agents/skills/guare-smart-but-scattered
 ```
 
-然后用斜杠命令激活：
+**Claude Code:**
+```bash
+cp -r smart-but-scattered-skill ~/.claude/skills/guare-smart-but-scattered
 ```
-/guare-smart-but-scattered 孩子上课坐不住怎么办？
+
+**GitHub Copilot CLI:**
+```bash
+cp -r smart-but-scattered-skill ~/.copilot/skills/guare-smart-but-scattered
+gh copilot skills reload
 ```
 
 ## 适用人群

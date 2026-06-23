@@ -1,0 +1,14 @@
+{
+  "name": "smart-but-scattered-skill",
+  "version": "1.0.0",
+  "description": "AI agent skill installer — Smart but Scattered executive skills knowledge base",
+  "bin": {
+    "smart-but-scattered-skill": "install.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raawaa/smart-but-scattered-skill.git"
+  },
+  "keywords": ["agent-skill", "executive-skills", "parenting"],
+  "license": "MIT"
+}

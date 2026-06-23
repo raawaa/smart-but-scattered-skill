@@ -65,39 +65,32 @@ Or load a specific chapter:
 /guare-smart-but-scattered Read ch14 — I need the sustained attention strategies.
 ```
 
-### As a Claude Code Skill
+### Install (Unified)
 
-1. **Install** — Copy this folder to your Claude Code skills directory:
-   ```bash
-   cp -r smart-but-scattered-skill ~/.claude/skills/guare-smart-but-scattered
-   ```
-
-2. **Use** — Activate via slash command or natural language:
-   > "Use the guare-smart-but-scattered skill. My 8-year-old avoids homework and fidgets at his desk."
-
-### As a GitHub Copilot CLI Skill
+**One command for all AI agents:**
 
 ```bash
-# Install
-cp -r smart-but-scattered-skill ~/.copilot/skills/guare-smart-but-scattered
-# Reload skills
-gh copilot skills reload
+npx raawaa/smart-but-scattered-skill
 ```
 
-Then activate with the slash command:
-```
-#skills guare-smart-but-scattered My child can't focus on homework
-```
+The script auto-detects your agent (Kimi Code / Claude Code / GitHub Copilot CLI / Amp) and installs to the correct directory. Restart your agent afterward.
 
-### As an Amp Skill
+### Manual Install (Fallback)
 
+**Kimi Code / Amp:**
 ```bash
 cp -r smart-but-scattered-skill ~/.agents/skills/guare-smart-but-scattered
 ```
 
-Then activate with the slash command:
+**Claude Code:**
+```bash
+cp -r smart-but-scattered-skill ~/.claude/skills/guare-smart-but-scattered
 ```
-/guare-smart-but-scattered My child fidgets and won't start homework
+
+**GitHub Copilot CLI:**
+```bash
+cp -r smart-but-scattered-skill ~/.copilot/skills/guare-smart-but-scattered
+gh copilot skills reload
 ```
 
 ## Target Audience
