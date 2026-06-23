@@ -51,16 +51,10 @@ Start any conversation about your child by activating the skill with a slash com
 
 ```
 /guare-smart-but-scattered My 8-year-old avoids homework and fidgets at his desk.
-```
-
-Or reference a specific topic:
-```
-/guare-smart-but-scattered Tell me about the ABC intervention model.
-```
-
-Or load a specific chapter:
-```
-/guare-smart-but-scattered Read ch14 — I need the sustained attention strategies.
+/guare-smart-but-scattered Melts down whenever homework gets hard, throws things
+/guare-smart-but-scattered Takes forever to get ready in the morning, needs constant reminders
+/guare-smart-but-scattered Always forgetting homework or losing things at school
+/guare-smart-but-scattered Teacher says he can't stay seated and zone out in class
 ```
 
 ### Install (Unified)

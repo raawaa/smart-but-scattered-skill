@@ -71,8 +71,10 @@ npx skills update guare-smart-but-scattered -g -y
 
 ```
 /guare-smart-but-scattered 我儿子8岁，写作业总是发呆玩文具，怎么办？
-/guare-smart-but-scattered 给我讲讲 ABC 干预模型
-/guare-smart-but-scattered 读一下 ch14，我需要持续注意力的方法
+/guare-smart-but-scattered 一遇到难题就发脾气摔东西，怎么办？
+/guare-smart-but-scattered 早上起床总要催十几遍，做什么都磨磨蹭蹭
+/guare-smart-but-scattered 在学校丢三落四，经常忘带作业回家
+/guare-smart-but-scattered 上课坐不住，老师说总走神
 ```
 
 ## 适用人群
