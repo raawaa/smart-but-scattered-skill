@@ -4,10 +4,6 @@
 
 ---
 
-**中文简介**: 这是一个为 AI 编程助手（如 Claude Code、GitHub Copilot CLI、Amp 等）设计的 **agent skill**（技能包），将《Smart but Scattered》一书中的执行技能框架结构化为可被 AI 直接引用的知识体系。当你在对话中提到孩子写作业拖拉、情绪失控、丢三落四等行为问题时，AI 可以利用这个 skill 诊断对应的执行技能短板，并提供基于循证的干预方案。
-
----
-
 ## What Is This?
 
 This repository packages the core frameworks from *Smart but Scattered* into a machine-readable **agent skill** — a structured knowledge base that AI coding agents can load on demand to give you research-backed parenting and teaching advice.
@@ -102,7 +98,7 @@ This skill is a **transformative knowledge extraction** — it distills the fram
 
 ## Contributing
 
-Found an error or want to improve a chapter? Open an issue or PR. This skill is designed to be iterated on — see the [update workflow](#update-workflow) below.
+Found an error or want to improve a chapter? Open an issue or PR. This skill is designed to be iterated on — updates are straightforward.
 
 ---
 
