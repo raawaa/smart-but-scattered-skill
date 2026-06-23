@@ -45,11 +45,9 @@ Instead of asking you to remember all 11 executive skills, the ABC model, and th
 
 ## How to Use
 
-> **❗ Important**: This skill's description is in English, so AI agents may not auto-activate when you speak other languages. **Always trigger it manually using a slash command** (see below) to ensure the skill is loaded.
-
 ### Quick Trigger (Recommended)
 
-Once installed, start any conversation about your child by activating the skill with a slash command:
+Start any conversation about your child by activating the skill with a slash command:
 
 ```
 /guare-smart-but-scattered My 8-year-old avoids homework and fidgets at his desk.

@@ -67,7 +67,7 @@ npx skills update guare-smart-but-scattered -g -y
 
 ## 使用方法
 
-> ⚠️ **重要**：本 skill 的描述是英文的，AI agent 在中文对话中可能不会自动激活它。**建议每次使用时先手动通过斜杠命令触发**，然后再用中文描述你的问题。
+每次对话开始时先用斜杠命令激活 skill，然后再用中文描述你的问题：
 
 ```
 /guare-smart-but-scattered 我儿子8岁，写作业总是发呆玩文具，怎么办？
