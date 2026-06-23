@@ -1,23 +1,25 @@
-# 🧠 Smart but Scattered — Executive Skills Agent Skill
+# 🧠 Smart but Scattered — 执行技能 Agent Skill
 
-> **AI agent skill** — knowledge base from *Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential* by Peg Dawson, EdD & Richard Guare, PhD.
+[🇬🇧 English](README.en.md) | [🇨🇳 中文](README.md)
+
+> **AI agent 技能包** — 基于 *Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential*（Peg Dawson, EdD & Richard Guare, PhD）一书的知识萃取。
 
 ---
 
-## What Is This?
+## 这是什么？
 
-This repository packages the core frameworks from *Smart but Scattered* into a machine-readable **agent skill** — a structured knowledge base that AI coding agents can load on demand to give you research-backed parenting and teaching advice.
+这是一个为 AI 编程助手（如 Claude Code、GitHub Copilot CLI、Amp 等）设计的 **agent skill（技能包）**，将《Smart but Scattered》一书中的执行技能框架结构化为 AI 可直接引用的知识体系。
 
-Instead of asking you to remember all 11 executive skills, the ABC model, and the 10 principles, you just tell your AI agent to load this skill. The agent does the rest.
+当你跟 AI 聊到孩子写作业拖拉、情绪失控、丢三落四、做事磨蹭等行为问题时，AI 可以借助这个 skill 诊断对应的执行技能短板，并提供基于循证的干预方案。你不用自己记住 11 项执行技能和 ABC 模型——让 AI 来查。
 
-## What's Inside
+## 目录结构
 
 ```
-├── SKILL.md              ← Entry point: core frameworks, chapter & topic index
-├── cheatsheet.md          ← Quick-reference tables & decision guides
-├── glossary.md            ← 35 key terms with definitions
-├── patterns.md            ← 15 intervention design patterns with step-by-step methods
-└── chapters/              ← 25 on-demand chapter summaries (ch00–ch24)
+├── SKILL.md              ← 主入口：核心框架、章节索引、主题索引
+├── cheatsheet.md          ← 快速参考表和决策指南
+├── glossary.md            ← 35 个关键术语定义
+├── patterns.md            ← 15 个干预设计模式（含步骤说明）
+└── chapters/              ← 25 个章节摘要（按需加载，ch00–ch24）
     ├── ch00-introduction.md
     ├── ch01-how-did-such-a-smart-kid.md
     ├── ch02-identifying-strengths.md
@@ -25,116 +27,115 @@ Instead of asking you to remember all 11 executive skills, the ABC model, and th
     └── ch24-whats-ahead.md
 ```
 
-### The 11 Executive Skills Covered
+### 涵盖的 11 项执行技能
 
-| Skill | Domain | Definition |
-|-------|--------|------------|
-| Response Inhibition | Doing | Think before acting; resist urges |
-| Working Memory | Thinking | Hold info in mind while performing tasks |
-| Emotional Control | Doing | Manage emotions to achieve goals |
-| Sustained Attention | Doing | Maintain focus despite distraction/boredom |
-| Task Initiation | Doing | Begin tasks without procrastination |
-| Planning/Prioritization | Thinking | Create a roadmap; decide what matters |
-| Organization | Thinking | Create/maintain systems for materials |
-| Time Management | Thinking | Estimate, allocate, and respect time |
-| Goal-Directed Persistence | Doing | Follow through despite competing interests |
-| Flexibility | Doing | Revise plans in face of obstacles |
-| Metacognition | Thinking | Self-monitor and self-evaluate |
+| 技能 | 领域 | 定义 |
+|------|------|------|
+| 反应抑制 (Response Inhibition) | 行动 | 三思而后行；抵制冲动 |
+| 工作记忆 (Working Memory) | 思维 | 执行任务时在脑中保持信息 |
+| 情绪控制 (Emotional Control) | 行动 | 管理情绪以达成目标 |
+| 持续注意力 (Sustained Attention) | 行动 | 克服分心和无聊保持专注 |
+| 任务启动 (Task Initiation) | 行动 | 不拖延地开始任务 |
+| 规划/优先级 (Planning/Prioritization) | 思维 | 制定路线图；判断轻重缓急 |
+| 组织能力 (Organization) | 思维 | 建立和维护物品管理系统 |
+| 时间管理 (Time Management) | 思维 | 估算、分配和遵守时间 |
+| 目标导向坚持 (Goal-Directed Persistence) | 行动 | 面对竞争兴趣不放弃 |
+| 灵活性 (Flexibility) | 行动 | 遇到障碍时调整计划 |
+| 元认知 (Metacognition) | 思维 | 自我监控和自我评估 |
 
-## How to Use
+## 使用方法
 
-> **❗ Important**: This skill's description is in English, so AI agents may not auto-activate when you speak other languages. **Always trigger it manually using a slash command** (see below) to ensure the skill is loaded.
+> ⚠️ **重要**：本 skill 的描述是英文的，AI agent 在中文对话中可能不会自动激活它。**强烈建议每次使用时先手动通过斜杠命令触发**，确保 skill 已被加载，然后再用中文描述你的问题。
 
-### Quick Trigger (Recommended)
+### 快速触发（推荐）
 
-Once installed, start any conversation about your child by activating the skill with a slash command:
+安装后，每次对话开始时先用斜杠命令激活 skill：
 
 ```
-/guare-smart-but-scattered My 8-year-old avoids homework and fidgets at his desk.
+/guare-smart-but-scattered 我儿子8岁，写作业总是发呆玩文具，怎么办？
 ```
 
-Or reference a specific topic:
+或者指定主题：
 ```
-/guare-smart-but-scattered Tell me about the ABC intervention model.
-```
-
-Or load a specific chapter:
-```
-/guare-smart-but-scattered Read ch14 — I need the sustained attention strategies.
+/guare-smart-but-scattered 给我讲讲 ABC 干预模型
 ```
 
-### As a Claude Code Skill
+或者加载特定章节：
+```
+/guare-smart-but-scattered 读一下 ch14，我需要持续注意力的方法
+```
 
-1. **Install** — Copy this folder to your Claude Code skills directory:
+### 在 Claude Code 中使用
+
+1. **安装** — 将文件夹复制到 Claude Code 的 skills 目录：
    ```bash
    cp -r smart-but-scattered-skill ~/.claude/skills/guare-smart-but-scattered
    ```
 
-2. **Use** — Activate via slash command or natural language:
-   > "Use the guare-smart-but-scattered skill. My 8-year-old avoids homework and fidgets at his desk."
+2. **使用** — 用斜杠命令或自然语言激活。中文用户**推荐用斜杠命令**：
 
-### As a GitHub Copilot CLI Skill
+### 在 GitHub Copilot CLI 中使用
 
 ```bash
-# Install
+# 安装
 cp -r smart-but-scattered-skill ~/.copilot/skills/guare-smart-but-scattered
-# Reload skills
+# 重载技能
 gh copilot skills reload
 ```
 
-Then activate with the slash command:
+然后在会话中用斜杠激活：
 ```
-#skills guare-smart-but-scattered My child can't focus on homework
+#skills guare-smart-but-scattered 孩子写作业拖拉怎么办？
 ```
 
-### As an Amp Skill
+### 在 Amp 中使用
 
 ```bash
 cp -r smart-but-scattered-skill ~/.agents/skills/guare-smart-but-scattered
 ```
 
-Then activate with the slash command:
+然后用斜杠命令激活：
 ```
-/guare-smart-but-scattered My child fidgets and won't start homework
+/guare-smart-but-scattered 孩子上课坐不住怎么办？
 ```
 
-## Target Audience
+## 适用人群
 
-- **Parents** of children aged 4–14 who struggle with organization, focus, emotional control, or task completion
-- **Teachers** looking for classroom intervention strategies
-- **Clinicians** (therapists, school psychologists) who work with executive skill deficits
-- **ADHD families** — the executive skills framework is the leading non-pharmacological approach
+- **家长** — 孩子 4–14 岁，在整理、专注、情绪控制或任务完成方面有困难
+- **教师** — 寻找课堂干预策略
+- **临床工作者**（治疗师、学校心理学家）— 处理执行技能缺陷
+- **ADHD 家庭** — 执行技能框架是领先的非药物干预方法
 
-## License
+## 许可证
 
-MIT — free to use, share, and modify.
+MIT — 可自由使用、分享和修改。
 
-## Attribution
+## 版权说明
 
-This skill is a **transformative knowledge extraction** — it distills the frameworks, principles, and techniques from *Smart but Scattered* into a structured reference format. It is **not a replacement for the book**. If you find this valuable, consider buying the original:
+本技能包是对《Smart but Scattered》一书中的框架、原则和技术的 **转换性知识萃取（transformative knowledge extraction）**，以结构化参考格式呈现。**它不替代原书**。如果你觉得有帮助，建议购买原书：
 
 - Dawson, P., & Guare, R. (2009). *Smart but Scattered: The Revolutionary "Executive Skills" Approach to Helping Kids Reach Their Potential*. Guilford Press.
 
-## Contributing
+## 贡献
 
-Found an error or want to improve a chapter? Open an issue or PR. This skill is designed to be iterated on — updates are straightforward.
+发现错误或想改进某个章节？欢迎提交 Issue 或 PR。
 
 ---
 
-## Update Workflow
+## 更新工作流
 
-After modifying the skill locally (`~/.agents/skills/guare-smart-but-scattered/`), sync to this repo:
+在本地修改 skill 后（`~/.agents/skills/guare-smart-but-scattered/`），同步到本仓库：
 
 ```bash
 cd ~/Code/smart-but-scattered-skill
 
-# Copy latest skill files
+# 复制最新的 skill 文件
 cp ~/.agents/skills/guare-smart-but-scattered/SKILL.md .
 cp ~/.agents/skills/guare-smart-but-scattered/*.md .
 cp -r ~/.agents/skills/guare-smart-but-scattered/chapters/ .
 
-# Commit and push
+# 提交并推送
 git add -A
-git commit -m "chore: update skill content — <brief description>"
+git commit -m "chore: update skill content — <简短说明>"
 git push
 ```
