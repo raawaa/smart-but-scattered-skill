@@ -43,6 +43,26 @@ Instead of asking you to remember all 11 executive skills, the ABC model, and th
 
 ## How to Use
 
+> **❗ Important**: This skill's description is in English, so AI agents may not auto-activate when you speak other languages. **Always trigger it manually using a slash command** (see below) to ensure the skill is loaded.
+
+### Quick Trigger (Recommended)
+
+Once installed, start any conversation about your child by activating the skill with a slash command:
+
+```
+/guare-smart-but-scattered My 8-year-old avoids homework and fidgets at his desk.
+```
+
+Or reference a specific topic:
+```
+/guare-smart-but-scattered Tell me about the ABC intervention model.
+```
+
+Or load a specific chapter:
+```
+/guare-smart-but-scattered Read ch14 — I need the sustained attention strategies.
+```
+
 ### As a Claude Code Skill
 
 1. **Install** — Copy this folder to your Claude Code skills directory:
@@ -50,14 +70,8 @@ Instead of asking you to remember all 11 executive skills, the ABC model, and th
    cp -r smart-but-scattered-skill ~/.claude/skills/guare-smart-but-scattered
    ```
 
-2. **Use** — In a conversation, tell Claude:
+2. **Use** — Activate via slash command or natural language:
    > "Use the guare-smart-but-scattered skill. My 8-year-old avoids homework and fidgets at his desk."
-
-   Or reference a specific topic:
-   > "Load guare-smart-but-scattered and tell me about the ABC intervention model."
-
-   Or load a specific chapter:
-   > "Read ch14 from guare-smart-but-scattered — I need the sustained attention strategies."
 
 ### As a GitHub Copilot CLI Skill
 
@@ -68,15 +82,20 @@ cp -r smart-but-scattered-skill ~/.copilot/skills/guare-smart-but-scattered
 gh copilot skills reload
 ```
 
-Then in a session:
+Then activate with the slash command:
 ```
-#skills guare-smart-but-scattered
+#skills guare-smart-but-scattered My child can't focus on homework
 ```
 
 ### As an Amp Skill
 
 ```bash
 cp -r smart-but-scattered-skill ~/.agents/skills/guare-smart-but-scattered
+```
+
+Then activate with the slash command:
+```
+/guare-smart-but-scattered My child fidgets and won't start homework
 ```
 
 ## Target Audience
