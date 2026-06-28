@@ -15,6 +15,7 @@
 ## 目录结构
 
 ```
+skills/guare-smart-but-scattered/
 ├── SKILL.md              ← 主入口：核心框架、章节索引、主题索引
 ├── cheatsheet.md          ← 快速参考表和决策指南
 ├── glossary.md            ← 35 个关键术语定义

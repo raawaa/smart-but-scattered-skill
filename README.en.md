@@ -15,6 +15,7 @@ Instead of asking you to remember all 11 executive skills, the ABC model, and th
 ## What's Inside
 
 ```
+skills/guare-smart-but-scattered/
 ├── SKILL.md              ← Entry point: core frameworks, chapter & topic index
 ├── cheatsheet.md          ← Quick-reference tables & decision guides
 ├── glossary.md            ← 35 key terms with definitions
@@ -83,17 +84,17 @@ npx skills update guare-smart-but-scattered -g -y
 
 **Kimi Code / Amp:**
 ```bash
-cp -r smart-but-scattered-skill ~/.agents/skills/guare-smart-but-scattered
+cp -r skills/guare-smart-but-scattered ~/.agents/skills/guare-smart-but-scattered
 ```
 
 **Claude Code:**
 ```bash
-cp -r smart-but-scattered-skill ~/.claude/skills/guare-smart-but-scattered
+cp -r skills/guare-smart-but-scattered ~/.claude/skills/guare-smart-but-scattered
 ```
 
 **GitHub Copilot CLI:**
 ```bash
-cp -r smart-but-scattered-skill ~/.copilot/skills/guare-smart-but-scattered
+cp -r skills/guare-smart-but-scattered ~/.copilot/skills/guare-smart-but-scattered
 gh copilot skills reload
 ```
 
